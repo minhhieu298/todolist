@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as AiIcons from 'react-icons/ai'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { deleteList, upadteList } from '../redux/action';
 import TodoForm from './TodoForm';
 
