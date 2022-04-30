@@ -1,0 +1,109 @@
+$bgImg: linear-gradient(
+  to right top,
+  #d16ba5,
+  #c777b9,
+  #ba83ca,
+  #aa8fd8,
+  #9a9ae1,
+  #8aa7ec,
+  #79b3f4,
+  #69bff8,
+  #52cffe,
+  #41dfff,
+  #46eefa,
+  #5ffbf1
+);
+$white: #ffffff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: $bgImg;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container {
+  background-color: $white;
+  width: 500px;
+  height: 650px;
+  border-radius: 1.05rem;
+  padding: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid #c7c7c77a;
+    font-size: 0.95rem;
+    font-weight: 500;
+    outline: none;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+  }
+  button {
+    outline: none;
+    border: 1px solid #c7c7c77a;
+    padding: 12px 8px;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    color: $white;
+    background-color: #d16ba5;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.wrap {
+  padding: 1rem 0.75rem;
+  margin-top: 1rem;
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    line-height: 18px;
+    padding: 1rem 10px;
+    margin: 10px 0;
+    background: linear-gradient(to right, #6be585, #dd3e54);
+    &:nth-child(4n + 1) {
+      background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    }
+    &:nth-child(4n + 2) {
+      background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+    }
+    &:nth-child(4n + 3) {
+      background: linear-gradient(to right, #f5af19, #f12711);
+    }
+    .content {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .choice {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 1.25rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
